@@ -32,8 +32,8 @@
                                 @if(isset($photos) && $photos -> count() > 0)
                                     @foreach ($photos as $photos)
                                         <li data-responsive="{{url('storage/'.$photos->img)}} 375, {{url('storage/'.$photos->img)}} 480, {{url('storage/'.$photos->img)}} 800" data-src="{{url('storage/'.$photos->img)}}"data-sub-html="<h4>{{ $photos->title }}</h4><p>{{ $photos->disc }}</p>">
-                                            <a href="{{url($photos->img)}}">
-                                                <img src="{{url($photos->img)}}"style="object-fit:cover;">
+                                            <a href="{{url('storage/'.$photos->img)}}">
+                                                <img src="{{url('storage/'.$photos->img)}}"style="object-fit:cover;">
                                                 <div class="demo-gallery-poster">
                                                     <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
                                                 </div>
