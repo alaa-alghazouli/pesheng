@@ -78,13 +78,13 @@
 				<div class="row">
 					<div class="col-md-12">
                         <h2 class="head-title">Last Work</h2>
-                        @php $works = DB::table('works')->latest('updated_at')->take(4)->get() @endphp
+                        {!--@php $works = DB::table('works')->latest('updated_at')->take(4)->get() @endphp
                         @foreach ($works as $works)
                         <a href="{{url($work->img)}}" class="gallery image-popup-link text-center" style="background-image: url({{url($work->img)}});">
 							<span><i class="icon-search3"></i></span>
 						</a>
                         @endforeach
-						
+						--!}
 					</div>
 				</div>
 			</div>
